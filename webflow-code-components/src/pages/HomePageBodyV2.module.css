@@ -1,0 +1,467 @@
+.page {
+  --home-v2-scroll-progress: 0;
+  position: relative;
+  color: var(--kc-ink);
+  background:
+    radial-gradient(860px 420px at 2% 0%, color-mix(in srgb, var(--kc-surface) 80%, transparent) 0%, transparent 64%),
+    var(--kc-paper);
+  overflow: clip;
+  font-family: inherit;
+  line-height: 1.48;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1), transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrollTrack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 3px;
+  background: color-mix(in srgb, var(--kc-ink) 10%, transparent);
+}
+
+.scrollFill {
+  display: block;
+  width: calc(var(--home-v2-scroll-progress) * 100%);
+  max-width: 100%;
+  height: 100%;
+  background: var(--kc-accent);
+  transition: width 120ms linear;
+}
+
+.hero {
+  position: relative;
+  min-height: min(640px, calc(100svh - 100px));
+  border-radius: var(--kc-radius);
+  margin: clamp(1rem, 3vw, 1.5rem) auto;
+  padding: 0;
+  max-width: min(1340px, calc(100% - 2rem));
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: var(--kc-shadow);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(150deg, color-mix(in srgb, #000 58%, transparent) 10%, transparent 66%);
+  z-index: 1;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.heroMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(calc(1 + (var(--home-v2-scroll-progress) * 0.08)));
+  transition: transform 200ms linear;
+}
+
+.heroScrim {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(0.5px);
+  background: color-mix(in srgb, #000 36%, transparent);
+  opacity: 0.12;
+}
+
+.heroInner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: clamp(1.8rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: min(720px, 78%);
+  gap: 0.9rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: color-mix(in srgb, var(--kc-accent) 90%, #fff);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.headline {
+  margin: 0;
+  line-height: 1.03;
+  letter-spacing: -0.025em;
+  font-size: clamp(2rem, 7vw, 3.9rem);
+  color: #fff;
+}
+
+.heroBody {
+  margin: 0;
+  max-width: 64ch;
+  font-size: clamp(1rem, 1.04rem + 0.5vw, 1.2rem);
+  color: color-mix(in srgb, #fff 88%, transparent);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.primaryCta,
+.secondaryCta,
+.quoteCta,
+.serviceCard > a,
+.projectCard .projectCardCopy a,
+.testimonial a {
+  display: inline-flex;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+
+.primaryCta {
+  background: var(--kc-accent);
+  color: #0a1322;
+  padding: 0.78rem 1.18rem;
+  font-weight: 700;
+}
+
+.secondaryCta,
+.serviceCard > a {
+  padding: 0.72rem 1.05rem;
+  border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+  color: #fff;
+}
+
+.quoteCta {
+  margin-top: 0.2rem;
+  padding: 0.74rem 1.2rem;
+  background: #fff;
+  color: var(--kc-brand);
+  font-weight: 700;
+}
+
+.primaryCta:hover,
+.secondaryCta:hover,
+.quoteCta:hover,
+.serviceCard > a:hover,
+.projectCard:hover .projectCardCopy a,
+.processItem:hover {
+  transform: translateY(-1px);
+}
+
+.primaryCta:focus-visible,
+.secondaryCta:focus-visible,
+.quoteCta:focus-visible,
+.serviceCard > a:focus-visible,
+.processItem > div:focus-within {
+  outline: 2px solid var(--kc-accent);
+  outline-offset: 3px;
+}
+
+.scene,
+.quote {
+  position: relative;
+  max-width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 4.5rem) 0;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--kc-accent) 85%, var(--kc-ink));
+}
+
+.sectionTitle {
+  margin: 0.6rem 0 0.65rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+
+.sectionBody {
+  margin: 0;
+  max-width: 72ch;
+  color: color-mix(in srgb, var(--kc-ink) 84%, transparent);
+  font-size: 1.02rem;
+}
+
+.services {
+  margin-top: 1.35rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.serviceCard {
+  background: var(--kc-paper);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 12%, transparent);
+  border-radius: var(--kc-radius);
+  padding: clamp(1.05rem, 2vw, 1.3rem);
+}
+
+.serviceCard h3 {
+  margin: 0;
+  font-size: 1.23rem;
+  line-height: 1.2;
+  color: var(--kc-brand);
+}
+
+.serviceCard p {
+  margin: 0.6rem 0 0;
+  color: color-mix(in srgb, var(--kc-ink) 82%, transparent);
+  max-width: 56ch;
+}
+
+.process {
+  margin: 1.2rem 0 0;
+  display: grid;
+  gap: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+.processItem {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--kc-ink) 12%, transparent);
+}
+
+.processItem:last-child {
+  border-bottom: 0;
+}
+
+.processIndex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 16%, transparent);
+  border-radius: 999px;
+  color: var(--kc-accent);
+  font-weight: 700;
+}
+
+.processItem h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.18;
+}
+
+.processItem p {
+  margin: 0.36rem 0 0;
+  max-width: 64ch;
+  color: color-mix(in srgb, var(--kc-ink) 82%, transparent);
+}
+
+.gallery {
+  margin-top: 1.35rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 1fr;
+}
+
+.projectCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: color-mix(in srgb, var(--kc-paper) 95%, transparent);
+  border-radius: var(--kc-radius);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 12%, transparent);
+  overflow: hidden;
+  min-height: 100%;
+  text-decoration: none;
+}
+
+.projectCard img {
+  width: 100%;
+  height: clamp(200px, 34vh, 300px);
+  object-fit: cover;
+}
+
+.projectCardCopy {
+  padding: 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.projectMeta {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.74rem;
+  color: var(--kc-accent);
+}
+
+.projectCardCopy h3 {
+  margin: 0;
+  line-height: 1.22;
+}
+
+.projectCardCopy p {
+  margin: 0;
+  color: color-mix(in srgb, var(--kc-ink) 76%, transparent);
+  max-width: 45ch;
+}
+
+.projectCard:hover img {
+  transform: scale(1.025);
+}
+
+.projectCard img,
+.projectCard:hover img {
+  transition: transform 260ms ease;
+}
+
+.testimonials {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.testimonial {
+  margin: 0;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--kc-paper) 96%, transparent), var(--kc-surface));
+  border-radius: var(--kc-radius);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 10%, transparent);
+  padding: 1rem;
+}
+
+.testimonial p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--kc-ink) 92%, transparent);
+}
+
+.testimonial cite {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.15rem;
+  font-style: normal;
+}
+
+.testimonial strong {
+  font-style: normal;
+  font-size: 0.98rem;
+}
+
+.testimonial span {
+  color: color-mix(in srgb, var(--kc-ink) 66%, transparent);
+  font-size: 0.9rem;
+}
+
+.quote {
+  margin-bottom: clamp(1rem, 3vw, 1.6rem);
+  margin-top: clamp(0.25rem, 2vw, 0.7rem);
+  border-radius: var(--kc-radius);
+  padding: clamp(1.6rem, 4.5vw, 2.6rem);
+  background: color-mix(in srgb, var(--kc-brand-deep) 90%, transparent);
+  border: 1px solid color-mix(in srgb, var(--kc-accent) 35%, transparent);
+}
+
+.quoteHeading {
+  margin: 0.5rem 0 0.55rem;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.quoteInner p {
+  margin: 0;
+  color: color-mix(in srgb, #fff 90%, transparent);
+  max-width: 70ch;
+}
+
+.contact {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+@media (min-width: 760px) {
+  .heroInner {
+    max-width: 620px;
+  }
+
+  .services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 759px) {
+  .heroInner {
+    max-width: 100%;
+  }
+
+  .hero {
+    min-height: calc(100svh - 92px);
+  }
+
+  .sectionBody {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  .hero,
+  .heroMedia img,
+  .primaryCta,
+  .secondaryCta,
+  .quoteCta,
+  .serviceCard > a,
+  .projectCard img {
+    transition: none;
+    transform: none;
+  }
+
+  .scrollFill {
+    transition: none;
+  }
+}
