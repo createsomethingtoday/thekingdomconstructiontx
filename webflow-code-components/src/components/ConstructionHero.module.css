@@ -1,0 +1,147 @@
+.hero {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  border-radius: calc(var(--kc-radius) + 6px);
+  overflow: hidden;
+  background:
+    radial-gradient(110% 100% at 85% 5%, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(130deg, var(--kc-brand) 0%, #214a67 46%, var(--kc-brand-deep) 100%);
+  box-shadow: var(--kc-shadow);
+  color: #ffffff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(8, 23, 34, 0.78) 0%, rgba(8, 23, 34, 0.52) 42%, rgba(8, 23, 34, 0.32) 100%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  z-index: 1;
+}
+
+.withOverlay::before {
+  opacity: 1;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 0.9rem;
+  max-width: 60ch;
+}
+
+.fullBleed {
+  padding: clamp(1.6rem, 3vw, 3rem);
+  min-height: 320px;
+  align-content: end;
+}
+
+.framed {
+  margin: 10px;
+  padding: clamp(1.2rem, 2.4vw, 2.4rem);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.headline {
+  margin: 0;
+  font-size: clamp(1.8rem, 4.4vw, 3rem);
+  line-height: 1.03;
+  font-weight: 800;
+}
+
+.body {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.97rem, 1.5vw, 1.09rem);
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.93rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.8rem 1.15rem;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 10px 20px -18px rgba(8, 14, 22, 0.45);
+}
+
+.primaryButton {
+  background: var(--kc-accent);
+  color: #221406;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px -16px rgba(8, 14, 22, 0.55);
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    transition: none;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .primaryButton {
+    transition: none;
+  }
+
+  .primaryButton:hover,
+  .secondaryButton:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .headline {
+    font-size: clamp(1.7rem, 10vw, 2.25rem);
+  }
+
+  .actions {
+    gap: 0.6rem;
+  }
+}

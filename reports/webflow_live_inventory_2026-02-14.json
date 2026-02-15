@@ -1,0 +1,82 @@
+{
+  "captured_on_utc": "2026-02-14T15:23:30Z",
+  "site": {
+    "id": "6990904d23918b690ebb8a39",
+    "display_name": "Archipro | BRIX Template - Sat Feb 14 2026 15:10:10 GMT+0000 (Coordinated Universal Time)",
+    "timezone": "America/Los_Angeles",
+    "primary_locale": {
+      "id": "6990904d23918b690ebb8a3b",
+      "cms_locale_id": "6990904d23918b690ebb8a3c",
+      "tag": "en"
+    }
+  },
+  "collections": {
+    "blog_categories": {
+      "id": "6990904d23918b690ebb8a84",
+      "slug": "blog-categories"
+    },
+    "blog_posts": {
+      "id": "6990904d23918b690ebb8aa3",
+      "slug": "blog-posts"
+    },
+    "team": {
+      "id": "6990904d23918b690ebb8ad0",
+      "slug": "team"
+    },
+    "services": {
+      "id": "6990904d23918b690ebb8af3",
+      "slug": "services"
+    },
+    "portfolio": {
+      "id": "6990904d23918b690ebb8b17",
+      "slug": "portfolio"
+    },
+    "service_areas": {
+      "id": "69909319578ee08883e7c358",
+      "slug": "service-areas"
+    },
+    "faqs": {
+      "id": "6990931af05acd68c72d67eb",
+      "slug": "faqs"
+    },
+    "reviews": {
+      "id": "6990931a17f9572c171daceb",
+      "slug": "reviews"
+    }
+  },
+  "key_pages": {
+    "home_v1": {
+      "id": "6990904d23918b690ebb8c5c",
+      "published_path": "/home-pages/home-v1"
+    },
+    "services_hub_template": {
+      "id": "6990904d23918b690ebb8d23",
+      "published_path": "/service-pages/services"
+    },
+    "portfolio_hub_template": {
+      "id": "6990904d23918b690ebb8d25",
+      "published_path": "/portfolio-pages/portfolio"
+    },
+    "blog_hub_v1": {
+      "id": "6990904d23918b690ebb8cb9",
+      "published_path": "/blog-pages/blog-v1"
+    },
+    "contact_v1": {
+      "id": "6990904d23918b690ebb8d19",
+      "published_path": "/contact-pages/contact-v1"
+    },
+    "request_quote": {
+      "id": "6990904d23918b690ebb8d28",
+      "published_path": "/landing-pages/request-a-quote"
+    },
+    "about": {
+      "id": "6990904d23918b690ebb8d20",
+      "published_path": "/company-pages/about"
+    }
+  },
+  "notes": [
+    "Template metadata on static pages still references Archipro branding.",
+    "New collections and required schema fields were created successfully.",
+    "Redirect map file remains at /Users/micahjohnson/Desktop/CONSTRUCTION/thekingdomconstructiontx/seo/redirects_301_archipro.csv."
+  ]
+}

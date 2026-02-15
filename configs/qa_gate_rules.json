@@ -1,0 +1,26 @@
+{
+  "workflow_states": ["draft", "qa_passed", "approved", "published"],
+  "blocking_rules": {
+    "require_unique_seo_title": true,
+    "require_unique_meta_description": true,
+    "require_canonical_match": true,
+    "require_schema_payload": true,
+    "require_image_alt_text": true,
+    "require_internal_links": true,
+    "block_slug_collisions": true
+  },
+  "schema_required_by_type": {
+    "service": ["LocalBusiness", "Service", "BreadcrumbList"],
+    "service_area": ["LocalBusiness", "Service", "BreadcrumbList"],
+    "faq_page": ["FAQPage", "BreadcrumbList"],
+    "blog_post": ["BreadcrumbList"]
+  },
+  "performance_targets_mobile": {
+    "lcp_seconds_max": 3.0,
+    "cls_max": 0.1
+  },
+  "metadata_limits": {
+    "seo_title_max_chars": 60,
+    "seo_meta_description_max_chars": 160
+  }
+}

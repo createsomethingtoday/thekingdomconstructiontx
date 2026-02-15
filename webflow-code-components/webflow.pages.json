@@ -1,0 +1,11 @@
+{
+  "library": {
+    "name": "The Kingdom Construction Pages",
+    "components": [
+      "./src/pages/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ],
+    "globals": "./src/globals.webflow.ts",
+    "description": "Page-level code components with nav and footer for The Kingdom Construction.",
+    "id": "the-kingdom-construction-pages"
+  }
+}

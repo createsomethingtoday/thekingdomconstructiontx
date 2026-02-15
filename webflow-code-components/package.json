@@ -1,0 +1,26 @@
+{
+  "name": "kingdom-construction-webflow-components",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable Webflow code components for The Kingdom Construction",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "share": "webflow library share",
+    "share:no-input": "webflow library share --no-input",
+    "share:retry": "./scripts/share_with_retry.sh",
+    "share:pages": "webflow library share --manifest ./webflow.pages.json",
+    "share:pages:retry": "./scripts/share_with_retry.sh --manifest ./webflow.pages.json"
+  },
+  "dependencies": {
+    "@webflow/data-types": "^1.1.0",
+    "@webflow/react": "^1.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@webflow/webflow-cli": "^1.12.0",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.4",
+    "typescript": "^5.7.3"
+  }
+}

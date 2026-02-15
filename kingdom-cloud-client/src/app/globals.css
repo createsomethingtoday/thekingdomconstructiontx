@@ -1,0 +1,183 @@
+/* If you want tailwind 'base' styles to override 'webflow' styles, re-order the layers */
+@layer properties, theme, base, webflow, components, utilities;
+
+/* Webflow global styles are imported in the 'webflow' layer */
+@import "../devlink/global.css" layer(webflow);
+@import "tailwindcss";
+
+:root {
+  --background: #f3f5f7;
+  --foreground: #132634;
+  --brand: #163a54;
+  --accent: #c57d35;
+  --surface: #ffffff;
+  --line: #cfdae3;
+  --muted: #5b6b78;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-source-sans);
+  --font-mono: var(--font-space-grotesk);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-source-sans), "Avenir Next", sans-serif;
+  min-height: 100vh;
+}
+
+.portal-shell {
+  width: min(1040px, calc(100% - 2rem));
+  margin: 1.3rem auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.portal-hero {
+  border-radius: 18px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  color: #f5f9fc;
+  background:
+    radial-gradient(80% 70% at 92% 4%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(132deg, #15364f 0%, #28506e 54%, #122638 100%);
+  box-shadow: 0 14px 30px -20px rgba(9, 19, 30, 0.78);
+}
+
+.portal-eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  opacity: 0.88;
+}
+
+.portal-title {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-space-grotesk), "Trebuchet MS", sans-serif;
+  font-size: clamp(1.6rem, 4.6vw, 2.7rem);
+  line-height: 1.04;
+}
+
+.portal-copy {
+  margin: 0.75rem 0 0;
+  max-width: 68ch;
+  line-height: 1.52;
+}
+
+.portal-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.portal-button {
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.67rem 1rem;
+}
+
+.portal-button-primary {
+  background: var(--accent);
+  color: #2f1f0a;
+}
+
+.portal-button-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #f7fbff;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.portal-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.portal-metric-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+}
+
+.portal-metric-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.portal-metric-value {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-space-grotesk), "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.portal-board {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.portal-board-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.portal-board-header h2 {
+  margin: 0;
+  font-family: var(--font-space-grotesk), "Trebuchet MS", sans-serif;
+}
+
+.portal-board-header a {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.portal-job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.85rem 0 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.portal-job-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem;
+  background: #fbfdff;
+}
+
+.portal-job-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.portal-job-meta {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+@media (max-width: 800px) {
+  .portal-shell {
+    width: min(1040px, calc(100% - 1rem));
+    margin-top: 0.75rem;
+  }
+
+  .portal-metrics {
+    grid-template-columns: 1fr;
+  }
+}

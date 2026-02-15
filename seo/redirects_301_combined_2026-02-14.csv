@@ -1,0 +1,100 @@
+source_path,target_path,status_code,reason
+/home-pages/home-v1,/,301,Home variant consolidated to canonical homepage
+/home-pages/home-v2,/,301,Home variant consolidated to canonical homepage
+/home-pages/home-v3,/,301,Home variant consolidated to canonical homepage
+/service-pages/services,/services,301,Template services hub moved to business URL model
+/portfolio-pages/portfolio,/projects,301,Portfolio hub renamed to projects hub
+/portfolio/house-architecture-design-in-los-angeles-ca,/projects/house-architecture-design-in-los-angeles-ca,301,Project detail path normalized
+/blog-pages/blog-v1,/blog,301,Template blog variant consolidated to blog hub
+/blog-pages/blog-v2,/blog,301,Template blog variant consolidated to blog hub
+/blog-pages/blog-v3,/blog,301,Template blog variant consolidated to blog hub
+/blog-posts/how-to-give-maintenance-to-your-wooden-furniture-the-full-guide,/blog/how-to-give-maintenance-to-your-wooden-furniture-the-full-guide,301,Blog detail path normalized
+/company-pages/about,/about,301,Company about moved to clean about path
+/company-pages/team,/about,301,Team page folded into about until dedicated team page is launched
+/team/john-carter,/about,301,Template person page removed
+/contact-pages/contact-v1,/contact,301,Template contact variant consolidated
+/contact-pages/contact-v2,/contact,301,Template contact variant consolidated
+/contact-pages/contact-v3,/contact,301,Template contact variant consolidated
+/landing-pages/request-a-quote,/book,301,Quote landing normalized to booking route
+/landing-pages/coming-soon,/,301,Template utility landing removed
+/template-pages/start-here,/,301,Template utility page removed from public surface
+/template-pages/styles-components,/,301,Template utility page removed from public surface
+/template-pages/licenses,/,301,Template utility page removed from public surface
+/template-pages/changelog,/,301,Template utility page removed from public surface
+/401,/404,301,Normalize unsupported error route
+/service-handyman-services,/services/handyman-services,301,Migrate legacy service detail path to /services/{service-slug}
+/service-interior-painting,/services/interior-painting,301,Migrate legacy service detail path to /services/{service-slug}
+/service-exterior-painting,/services/exterior-painting,301,Migrate legacy service detail path to /services/{service-slug}
+/service-kitchen-and-cabinet-refinishing,/services/kitchen-and-cabinet-refinishing,301,Migrate legacy service detail path to /services/{service-slug}
+/gallery-All,/projects,301,Consolidate legacy gallery category pages into projects hub
+/gallery-Exterior-Painting,/projects,301,Consolidate legacy gallery category pages into projects hub
+/gallery-Interior-Painting,/projects,301,Consolidate legacy gallery category pages into projects hub
+/blog-smart-solutions-for-urban-living,/blog/smart-solutions-for-urban-living,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-from-blueprint-to-build-the,/blog/from-blueprint-to-build-the,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-elevate-your-living-space-smart,/blog/elevate-your-living-space-smart,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-seamless-transitions-integrating-modern-amenities,/blog/seamless-transitions-integrating-modern-amenities,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-creating-sanctuary-how-kingdom-construction,/blog/creating-sanctuary-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-masterful-upgrades-how-kingdom-construction,/blog/masterful-upgrades-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-revitalizing-heritage-bringing-new-life,/blog/revitalizing-heritage-bringing-new-life,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-building-dreams-how-kingdom-construction,/blog/building-dreams-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-from-concept-to-reality-kingdom,/blog/from-concept-to-reality-kingdom,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-beyond-walls-how-kingdom-construction,/blog/beyond-walls-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-from-concept-to-reality-the,/blog/from-concept-to-reality-the,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-renovation-with-precision-kingdom-constructions,/blog/renovation-with-precision-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-innovative-design-solutions-kingdom-constructions,/blog/innovative-design-solutions-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-stress-free-remodeling-how-kingdom-construction,/blog/stress-free-remodeling-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-garden-retreats-creating-outdoor-spaces,/blog/garden-retreats-creating-outdoor-spaces,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-innovative-kitchen-and-bath-renovations,/blog/innovative-kitchen-and-bath-renovations,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-the-latest-trends-in-sustainable,/blog/the-latest-trends-in-sustainable,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-building-the-future-how-kingdom,/blog/building-the-future-how-kingdom,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-transform-your-home-innovative-remodeling,/blog/transform-your-home-innovative-remodeling,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-how-to-choose-the-right,/blog/how-to-choose-the-right,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-transform-your-space-tips-for,/blog/transform-your-space-tips-for,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-efficient-remodeling-time-saving-tips-and,/blog/efficient-remodeling-time-saving-tips-and,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-the-ultimate-guide-to-choosing,/blog/the-ultimate-guide-to-choosing,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-open-concept-living-redefining-space-with,/blog/open-concept-living-redefining-space-with,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-maximize-your-homes-potential-top,/blog/maximize-your-homes-potential-top,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-luxury-on-a-budget-affordable,/blog/luxury-on-a-budget-affordable,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-open-floor-plans-how-kingdom,/blog/open-floor-plans-how-kingdom,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-experience-luxury-premium-remodeling-services,/blog/experience-luxury-premium-remodeling-services,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-eco-friendly-makeovers-kingdom-constructions-guide,/blog/eco-friendly-makeovers-kingdom-constructions-guide,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-the-art-of-renovation-crafting,/blog/the-art-of-renovation-crafting,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-maximize-your-space-small-home,/blog/maximize-your-space-small-home,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-home-office-excellence-designing-functional,/blog/home-office-excellence-designing-functional,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-crafting-your-dream-space-a,/blog/crafting-your-dream-space-a,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-bespoke-solutions-how-kingdom-construction,/blog/bespoke-solutions-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-enhancing-curb-appeal-innovative-exterior,/blog/enhancing-curb-appeal-innovative-exterior,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-elevating-interiors-kingdom-constructions-signature,/blog/elevating-interiors-kingdom-constructions-signature,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-crafting-community-spaces-kingdom-constructions,/blog/crafting-community-spaces-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-reimagining-home-layouts-kingdom-constructions,/blog/reimagining-home-layouts-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-crafting-modern-havens-kingdom-constructions,/blog/crafting-modern-havens-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-smart-renovation-trends-kingdom-constructions,/blog/smart-renovation-trends-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-innovative-spaces-kingdom-constructions-guide,/blog/innovative-spaces-kingdom-constructions-guide,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-holistic-home-design-creating-cohesive,/blog/holistic-home-design-creating-cohesive,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-artful-exteriors-refined-aesthetics-with,/blog/artful-exteriors-refined-aesthetics-with,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-timeless-elegance-designing-classic-interiors,/blog/timeless-elegance-designing-classic-interiors,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-innovative-basement-transformations-unlocking-hidden,/blog/innovative-basement-transformations-unlocking-hidden,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-innovative-garage-transformations-unleashing-utility,/blog/innovative-garage-transformations-unleashing-utility,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-revamp-and-revitalize-expert-strategies,/blog/revamp-and-revitalize-expert-strategies,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-next-level-comfort-kingdom-constructions-guide,/blog/next-level-comfort-kingdom-constructions-guide,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-sophisticated-redesigns-embracing-customization-with,/blog/sophisticated-redesigns-embracing-customization-with,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-mastering-the-art-of-home,/blog/mastering-the-art-of-home,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-the-art-of-fine-finishes,/blog/the-art-of-fine-finishes,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-luxury-redefined-how-kingdom-construction,/blog/luxury-redefined-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-stylish-and-sustainable-kingdom-constructions,/blog/stylish-and-sustainable-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-adaptive-home-makeovers-kingdom-constructions,/blog/adaptive-home-makeovers-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-discovering-spaces-kingdom-constructions-philosophy,/blog/discovering-spaces-kingdom-constructions-philosophy,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-redefining-outdoor-living-kingdom-constructions,/blog/redefining-outdoor-living-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-modern-minimalism-kingdom-constructions-expert,/blog/modern-minimalism-kingdom-constructions-expert,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-enhancing-functional-spaces-kingdom-constructions,/blog/enhancing-functional-spaces-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-crafting-the-ultimate-entertaining-area,/blog/crafting-the-ultimate-entertaining-area,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-revolutionizing-home-comfort-energy-efficient-upgrades,/blog/revolutionizing-home-comfort-energy-efficient-upgrades,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-luxury-outdoor-living-creating-exceptional,/blog/luxury-outdoor-living-creating-exceptional,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-design-with-purpose-how-kingdom,/blog/design-with-purpose-how-kingdom,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-a-seamless-blend-kingdom-constructions,/blog/a-seamless-blend-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-maximizing-small-spaces-kingdom-constructions,/blog/maximizing-small-spaces-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-seamless-transitions-kingdom-constructions-expertise,/blog/seamless-transitions-kingdom-constructions-expertise,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-inspired-renovations-how-kingdom-construction,/blog/inspired-renovations-how-kingdom-construction,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-visionary-home-transformations-kingdom-constructions,/blog/visionary-home-transformations-kingdom-constructions,301,Migrate legacy blog detail path to /blog/{post-slug}
+/blog-transformative-touches-revitalizing-home-interiors,/blog/transformative-touches-revitalizing-home-interiors,301,Migrate legacy blog detail path to /blog/{post-slug}
+/contact-2-step,/contact,301,Consolidate multi-step contact variant to canonical contact page

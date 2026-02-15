@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.slot {
+  border-radius: var(--kc-radius);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 12%, transparent);
+  padding: 1rem;
+  background: var(--kc-paper);
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+

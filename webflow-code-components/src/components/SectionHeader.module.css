@@ -1,0 +1,58 @@
+.header {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.left {
+  text-align: left;
+  justify-items: start;
+}
+
+.center {
+  text-align: center;
+  justify-items: center;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--kc-ink) 72%, transparent);
+}
+
+.heading {
+  margin: 0;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.medium .heading {
+  font-size: clamp(1.55rem, 3.5vw, 2.15rem);
+}
+
+.large .heading {
+  font-size: clamp(1.8rem, 4.6vw, 2.8rem);
+}
+
+.rule {
+  width: 70px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--kc-accent) 0%, color-mix(in srgb, var(--kc-accent) 20%, transparent) 100%);
+}
+
+.body {
+  margin: 0;
+  max-width: 70ch;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--kc-ink) 82%, transparent);
+}
+
+@media (max-width: 700px) {
+  .header {
+    gap: 0.55rem;
+  }
+}

@@ -1,0 +1,10 @@
+.faqGrid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stack {
+  display: grid;
+  gap: 1.35rem;
+}
+

@@ -1,0 +1,25 @@
+source_path,target_path,status_code,reason
+/home-pages/home-v1,/,301,Home variant consolidated to canonical homepage
+/home-pages/home-v2,/,301,Home variant consolidated to canonical homepage
+/home-pages/home-v3,/,301,Home variant consolidated to canonical homepage
+/service-pages/services,/services,301,Template services hub moved to business URL model
+/services/exterior-design,/services/exterior-design,301,Service detail normalized under canonical services path
+/portfolio-pages/portfolio,/projects,301,Portfolio hub renamed to projects hub
+/portfolio/house-architecture-design-in-los-angeles-ca,/projects/house-architecture-design-in-los-angeles-ca,301,Project detail path normalized
+/blog-pages/blog-v1,/blog,301,Template blog variant consolidated to blog hub
+/blog-pages/blog-v2,/blog,301,Template blog variant consolidated to blog hub
+/blog-pages/blog-v3,/blog,301,Template blog variant consolidated to blog hub
+/blog-posts/how-to-give-maintenance-to-your-wooden-furniture-the-full-guide,/blog/how-to-give-maintenance-to-your-wooden-furniture-the-full-guide,301,Blog detail path normalized
+/company-pages/about,/about,301,Company about moved to clean about path
+/company-pages/team,/about,301,Team page folded into about until dedicated team page is launched
+/team/john-carter,/about,301,Template person page removed
+/contact-pages/contact-v1,/contact,301,Template contact variant consolidated
+/contact-pages/contact-v2,/contact,301,Template contact variant consolidated
+/contact-pages/contact-v3,/contact,301,Template contact variant consolidated
+/landing-pages/request-a-quote,/book,301,Quote landing normalized to booking route
+/landing-pages/coming-soon,/,301,Template utility landing removed
+/template-pages/start-here,/,301,Template utility page removed from public surface
+/template-pages/styles-components,/,301,Template utility page removed from public surface
+/template-pages/licenses,/,301,Template utility page removed from public surface
+/template-pages/changelog,/,301,Template utility page removed from public surface
+/401,/404,301,Normalize unsupported error route

@@ -1,0 +1,6 @@
+city,state,slug,priority,radius_miles,proof_points
+Arlington,TX,arlington-tx,1,20,"Core service city with highest volume and fastest response coverage"
+Fort Worth,TX,fort-worth-tx,2,25,"High-demand remodel market with strong project fit"
+Grand Prairie,TX,grand-prairie-tx,3,20,"Adjacent service area with repeat request patterns"
+Mansfield,TX,mansfield-tx,4,20,"Growing residential demand and mid-size project mix"
+Irving,TX,irving-tx,5,25,"Commercial and residential opportunity with central access"

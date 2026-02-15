@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag {
+  border-radius: 999px;
+  padding: 0.34rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid transparent;
+}
+
+.neutral .tag {
+  background: color-mix(in srgb, var(--kc-ink) 6%, #ffffff);
+  border-color: color-mix(in srgb, var(--kc-ink) 14%, transparent);
+  color: color-mix(in srgb, var(--kc-ink) 86%, transparent);
+}
+
+.accent .tag {
+  background: color-mix(in srgb, var(--kc-accent) 14%, #ffffff);
+  border-color: color-mix(in srgb, var(--kc-accent) 30%, transparent);
+  color: color-mix(in srgb, var(--kc-ink) 88%, transparent);
+}
+
+.inverted .tag {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.92);
+}

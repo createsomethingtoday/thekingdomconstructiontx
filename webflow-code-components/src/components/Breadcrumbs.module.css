@@ -1,0 +1,60 @@
+.nav {
+  font-size: 0.9rem;
+}
+
+.neutral {
+  color: color-mix(in srgb, var(--kc-ink) 84%, transparent);
+}
+
+.inverted {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.current {
+  font-weight: 850;
+}
+
+.separator {
+  display: inline-flex;
+  width: 0.9rem;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.slash::before {
+  content: "/";
+}
+
+.chevron::before {
+  content: ">";
+}
+
+.dot::before {
+  content: "\u00B7";
+}

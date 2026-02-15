@@ -1,0 +1,25 @@
+.rule {
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.hairline {
+  height: 1px;
+}
+
+.medium {
+  height: 3px;
+}
+
+.line {
+  background: color-mix(in srgb, var(--kc-ink) 14%, transparent);
+}
+
+.accent {
+  background: linear-gradient(90deg, var(--kc-accent) 0%, color-mix(in srgb, var(--kc-accent) 10%, transparent) 100%);
+}
+
+.space {
+  height: 1.2rem;
+}

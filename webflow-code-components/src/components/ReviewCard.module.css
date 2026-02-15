@@ -1,0 +1,66 @@
+.card {
+  display: grid;
+  gap: 1rem;
+  border-radius: var(--kc-radius);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 14%, transparent);
+  background: #ffffff;
+  padding: 1.15rem;
+  box-shadow: 0 10px 26px -20px rgba(8, 19, 30, 0.65);
+}
+
+.quote {
+  margin: 0;
+  line-height: 1.58;
+  font-size: 1.01rem;
+  max-width: 62ch;
+}
+
+.meta {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.customer,
+.location,
+.project,
+.rating {
+  margin: 0;
+}
+
+.customer {
+  font-weight: 700;
+}
+
+.location {
+  font-size: 0.9rem;
+  opacity: 0.84;
+}
+
+.project {
+  justify-self: start;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--kc-brand);
+  background: color-mix(in srgb, var(--kc-brand) 12%, #ffffff);
+  border-radius: 999px;
+  padding: 0.26rem 0.56rem;
+}
+
+.rating {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--kc-brand) 82%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.ratingStars {
+  color: var(--kc-accent);
+  letter-spacing: 0.1em;
+}
+
+.ratingText {
+  opacity: 0.85;
+}

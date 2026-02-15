@@ -1,0 +1,48 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.small .badge {
+  font-size: 0.68rem;
+  padding: 0.45rem 0.65rem;
+}
+
+.medium .badge {
+  font-size: 0.72rem;
+  padding: 0.55rem 0.8rem;
+}
+
+.filled .badge {
+  background: color-mix(in srgb, var(--kc-accent) 16%, #ffffff);
+  color: color-mix(in srgb, var(--kc-ink) 84%, transparent);
+  border: 1px solid color-mix(in srgb, var(--kc-accent) 26%, transparent);
+}
+
+.outline .badge {
+  background: transparent;
+  color: color-mix(in srgb, var(--kc-ink) 82%, transparent);
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 18%, transparent);
+}

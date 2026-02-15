@@ -1,0 +1,16 @@
+.stack {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.prose {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.paragraph {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+

@@ -1,0 +1,67 @@
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.paper {
+  background: var(--kc-paper);
+}
+
+.surface {
+  background: var(--kc-surface);
+}
+
+.brand {
+  background:
+    radial-gradient(100% 120% at 85% 10%, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(135deg, var(--kc-brand) 0%, #214a67 52%, #0d1b2c 100%);
+  color: #ffffff;
+}
+
+.brandDeep {
+  background: linear-gradient(140deg, var(--kc-brand-deep) 0%, #101f2f 60%, #070e15 100%);
+  color: #ffffff;
+}
+
+.padTight {
+  padding: clamp(1.2rem, 2.2vw, 1.8rem) 0;
+}
+
+.padNormal {
+  padding: clamp(1.8rem, 3.5vw, 3rem) 0;
+}
+
+.padSpacious {
+  padding: clamp(2.5rem, 4.6vw, 4rem) 0;
+}
+
+.inner {
+  width: min(1040px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.standard {
+  width: min(1040px, calc(100% - 2rem));
+}
+
+.narrow {
+  width: min(760px, calc(100% - 2rem));
+}
+
+.wide {
+  width: min(1240px, calc(100% - 2rem));
+}
+
+.full {
+  width: calc(100% - 2rem);
+}
+
+@media (max-width: 720px) {
+  .inner,
+  .standard,
+  .narrow,
+  .wide,
+  .full {
+    width: calc(100% - 1.25rem);
+  }
+}

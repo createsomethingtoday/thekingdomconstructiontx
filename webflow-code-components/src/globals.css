@@ -1,0 +1,36 @@
+:host {
+  /* Defaults can be overridden by site-level CSS variables if desired. */
+  --kc-brand: var(--color-brand, #102032);
+  --kc-brand-deep: var(--color-brand-deep, #070e15);
+  --kc-accent: var(--color-accent, #fe9116);
+  --kc-accent-deep: var(--color-accent-deep, #ec7e01);
+  --kc-ink: var(--color-ink, #102032);
+  --kc-paper: var(--color-paper, #ffffff);
+  --kc-surface: var(--color-surface, #f3f5f7);
+  --kc-radius: 14px;
+  --kc-shadow: 0 12px 30px -16px rgba(16, 34, 49, 0.45);
+
+  color: var(--kc-ink);
+  font-family: "Figtree", "Work Sans", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+:host :is(a, button) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:host :is(a, button):focus-visible {
+  outline: 2px solid var(--kc-accent);
+  outline-offset: 3px;
+}
+
+button {
+  font-family: inherit;
+}

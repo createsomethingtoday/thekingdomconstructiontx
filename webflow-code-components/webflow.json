@@ -1,0 +1,18 @@
+{
+  "library": {
+    "name": "The Kingdom Construction Components",
+    "components": [
+      "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ],
+    "globals": "./src/globals.webflow.ts",
+    "description": "Webflow Enterprise Solutions",
+    "id": "the-kingdom-construction-components"
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1771093296441,
+      "version": "1.12.0"
+    }
+  }
+}

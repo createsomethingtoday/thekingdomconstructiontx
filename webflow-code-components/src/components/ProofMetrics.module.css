@@ -1,0 +1,45 @@
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.light .card {
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--kc-ink) 14%, transparent);
+  color: var(--kc-ink);
+}
+
+.brand .card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+}
+
+.card {
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  display: grid;
+  gap: 0.35rem;
+  box-shadow: 0 10px 24px -20px rgba(8, 19, 30, 0.7);
+}
+
+.value {
+  margin: 0;
+  font-weight: 900;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  line-height: 1.05;
+  font-family: inherit;
+}
+
+.label {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.35;
+}
+
+@media (max-width: 860px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
